@@ -5,4 +5,22 @@
     <bean id="helloBean" class="com.shiyanlou.demo.helloworld.HelloWorld">
         <property name="name" value="shiyanlou"/>
     </bean>
+  <context:component-scan base-package="com.kill"/>
+
+    <!--一般方法-->
+    <bean id="FileNameGenerator" class="com.shiyanlou.spring.bean.FileNameGenerator">
+        <property name="name">
+            <value>shiyanlou</value>
+        </property>
+        <property name="type">
+            <value>txt</value>
+        </property>
+    </bean>
+    <!-- 另一重配置方法 缩写方法-->
+    <!--
+        <bean id="FileNameGenerator" class="com.shiyanlou.spring.bean.FileNameGenerator">
+               <property name="name" value="shiyanlou" />
+               <property name="type" value="txt" />
+           </bean>
+     -->
 </beans>

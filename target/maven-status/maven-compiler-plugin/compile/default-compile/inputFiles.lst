@@ -1,2 +1,16 @@
-/home/project/springExample/src/main/java/com/shiyanlou/demo/helloworld/HelloWorld.java
 /home/project/springExample/src/main/java/com/shiyanlou/demo/App.java
+/home/project/springExample/src/main/java/com/shiyanlou/demo/loosely_coupled/JsonOutputGenerator.java
+/home/project/springExample/src/main/java/com/shiyanlou/spring/bean/App.java
+/home/project/springExample/src/main/java/com/kill/demo/entity/Person.java
+/home/project/springExample/src/main/java/com/kill/demo/entity/Dog.java
+/home/project/springExample/src/main/java/com/shiyanlou/spring/common/App.java
+/home/project/springExample/src/main/java/com/shiyanlou/demo/loosely_coupled/CsvOutputGenerator.java
+/home/project/springExample/src/main/java/com/shiyanlou/demo/helloworld/HelloWorld.java
+/home/project/springExample/src/main/java/com/kill/demo/service/AppTest.java
+/home/project/springExample/src/main/java/com/kill/demo/service/UserServiceImpl.java
+/home/project/springExample/src/main/java/com/shiyanlou/demo/loosely_coupled/OutputHelper.java
+/home/project/springExample/src/main/java/com/shiyanlou/spring/services/CustomerService.java
+/home/project/springExample/src/main/java/com/shiyanlou/spring/dao/CustomerDAO.java
+/home/project/springExample/src/main/java/com/shiyanlou/demo/loosely_coupled/IOutputGenerator.java
+/home/project/springExample/src/main/java/com/kill/demo/service/UserService.java
+/home/project/springExample/src/main/java/com/shiyanlou/spring/bean/FileNameGenerator.java

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+            http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context.xsd
+            http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <context:component-scan base-package="com.shiyanlou.spring"/>
+
+    <!-- 以上 xml 文件中，所有文件名字，
+    只要包含 DAO 和 Service（ DAO.，Service. ）关键字的，
+    都将被检查注册到 Spring 容器中。 -->
+     <context:component-scan base-package="com.shiyanlou.spring" >
+        <context:include-filter type="regex"
+                       expression="com.shiyanlou.spring.dao.*DAO.*" />
+    </context:component-scan>
+
+    <!-- exclude ，制定组件避免被 Spring 发现并被注册到容器中 -->
+    <context:component-scan base-package="com.shiyanlou.spring" >
+        <context:exclude-filter type="regex"
+            expression="com.shiyanlou.spring.dao.*DAO.*" />
+    </context:component-scan>
+</beans>

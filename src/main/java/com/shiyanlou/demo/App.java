@@ -1,13 +1,16 @@
 package com.shiyanlou.demo;
 
-/**
- * Hello world!
- *
- */
-public class App 
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+import com.shiyanlou.demo.helloworld.HelloWorld;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class App {
+    private static ApplicationContext context;
+
+    public static void main(String[] args) {
+        context = new ClassPathXmlApplicationContext("SpringBeans.xml");
+
+        HelloWorld obj = (HelloWorld) context.getBean("helloBean");
+        obj.printHello();
     }
 }
